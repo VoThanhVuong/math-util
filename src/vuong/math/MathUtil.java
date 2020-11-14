@@ -5,7 +5,7 @@
  */
 package vuong.math;
 
-import vuong.utils.MathUtility;
+import static vuong.utils.MathUtility.*;
 
 /**
  *
@@ -14,10 +14,11 @@ import vuong.utils.MathUtility;
 public class MathUtil {
     public static void main (String[] args){
         long expected=120;
-        long actual = MathUtility.getFactorial(5);
+        long actual =getFactorial(5);
         System.out.println("5!: "+expected + "; Actual: "+ +actual);
-        System.out.println("6!: "+MathUtility.getFactorial(6));
-        System.out.println("0!: "+MathUtility.getFactorial(0));
-        System.out.println("-5!: "+MathUtility.getFactorial(-5));
+        System.out.println("6!: "+getFactorial(6));
+        System.out.println("0!: "+getFactorial(0));
+        System.out.println("-5!: "+getFactorial(-5));
+        System.out.println("PI: "+PI);
     }
 }
