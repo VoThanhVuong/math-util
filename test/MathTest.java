@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-import java.sql.SQLException;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -22,7 +21,7 @@ public class MathTest {
     public void getFactorial_RunsWel1_IfValidArgument(){
         assertEquals(120, getFactorial(5));
     }
-    @Test(expected = SQLException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void getFactorial_ThrowsException_IfInvalidArgument(){
         getFactorial(-5);
     }
